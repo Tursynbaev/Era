@@ -1,35 +1,3 @@
-# fruits = ["apple", "banana", "cherry"]
-# for fruit in fruits:
-#   print(fruit)
-# count = 0
-# while count < 5:
-#   print(count)
-#   count += 1
-# for i in range(5):
-#   print(i)
-# for i in range(2, 8, 2):
-#   print(i)
-# numbers = list(range(5))
-# print(numbers)
-
-# import random
-# random_number = random.randint(1, 10)
-# print("Random number between 1 and 10:", random_number)
-# import random
-# random_number = random.randrange(1, 11, 2)
-# print("Random odd number between 1 and 10:", random_number)
-# import random
-# random_float = random.random()
-# print("Random float between 0 and 1:", random_float)
-
-# fruits = ["apple", "banana", "cherry"]
-# for index, fruit in enumerate(fruits):
-#   print(index, fruit)
-# A = int(input("first number: "))
-# B = int(input("second number: "))
-# for i in range(A, B + 1):
-#   print(i)
-
 # A = int(input(" first number: "))
 # B = int(input(" second number: "))
 # if A < B:
@@ -50,3 +18,27 @@
 #     x = int(input())
 #     sum_lost += x
 # print(sum_n - sum_lost)
+
+# A = 15
+# B = 5
+
+# # Находим ближайшее меньшее нечётное число, которое больше B
+# if B % 2 == 0:
+#     B += 1
+# else:
+#     B += 2
+
+# # Выводим все нечётные числа от A до B включительно в порядке убывания
+# while A >= B:
+#     print(A)
+#     A -= 2
+
+N = int(input())
+sum_all = (N * (N + 1)) // 2
+sum_cards = 0
+
+for i in range(1, N):
+    sum_cards += int(input())
+
+lost_card = sum_all - sum_cards
+print(lost_card)
