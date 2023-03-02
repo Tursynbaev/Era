@@ -33,12 +33,12 @@
 #     print(A)
 #     A -= 2
 
-N = int(input())
-sum_all = (N * (N + 1)) // 2
-sum_cards = 0
+# N = int(input())
+# sum_all = (N * (N + 1)) // 2
+# sum_cards = 0
 
-for i in range(1, N):
-    sum_cards += int(input())
+# for i in range(1, N):
+#     sum_cards += int(input())
 
-lost_card = sum_all - sum_cards
-print(lost_card)
+# lost_card = sum_all - sum_cards
+# print(lost_card)
