@@ -1,21 +1,21 @@
 # 1esep
 
 
-# students = []
+students = []
 
-# while True:
-#     name = input(" имя студента (или 'q' для выхода): ")
-#     if name == 'q':
-#         break
-#     grade = int(input(" класс студента: "))
-#     subject = input(" предмет студента: ")
-#     students.append((name, grade, subject))
+while True:
+    name = input(" имя студента (или 'q' для выхода): ")
+    if name == 'q':
+        break
+    grade = int(input(" класс студента: "))
+    subject = input(" предмет студента: ")
+    students.append((name, grade, subject))
 
-# students_sorted = sorted(students, key=lambda student: student[1])
+students_sorted = sorted(students, key=lambda student: student[1])
 
-# for student in students_sorted:
+for student in students_sorted:
 
-#     print(f"{student[0]} - {student[1]} класс, изучает {student[2]}")
+    print(f"{student[0]} - {student[1]} класс, изучает {student[2]}")
 
 
 # 2esep
@@ -93,20 +93,20 @@
 # 6esep
 
 
-def is_sorted(lst):
-    if all(lst[i] <= lst[i+1] for i in range(len(lst)-1)):
-        return True
-    elif all(lst[i] >= lst[i+1] for i in range(len(lst)-1)):
-        return True
-    else:
-        return False
+# def is_sorted(lst):
+#     if all(lst[i] <= lst[i+1] for i in range(len(lst)-1)):
+#         return True
+#     elif all(lst[i] >= lst[i+1] for i in range(len(lst)-1)):
+#         return True
+#     else:
+#         return False
 
-# Запросить у пользователя последовательность чисел для списка
-lst = input("Введите последовательность чисел через пробел: ").split()
-lst = [int(x) for x in lst]
+# # Запросить у пользователя последовательность чисел для списка
+# lst = input("Введите последовательность чисел через пробел: ").split()
+# lst = [int(x) for x in lst]
 
-# Проверить, отсортирован ли список
-if is_sorted(lst):
-    print("Список отсортирован")
-else:
-    print("Список не отсортирован")
+# # Проверить, отсортирован ли список
+# if is_sorted(lst):
+#     print("Список отсортирован")
+# else:
+#     print("Список не отсортирован")
